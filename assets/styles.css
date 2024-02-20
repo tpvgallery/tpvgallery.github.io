@@ -1,6 +1,35 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 header {
     height: 180px; /* set the height of the header to 100 pixels */
     background:black;
+}
+
+footer {
+  background: /* gradient can be an image */
+  linear-gradient(
+    to left, 
+    rgb(0, 225, 255) 0%,
+    rgb(0, 153, 255) 100%
+  )
+  left 
+  top
+  no-repeat; 
+  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
+  height: 180px; /* set the height of the header to 100 pixels */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 100%;
+}
+
+.tpv-footercontent {
+  margin-right: 70px;
+  margin-left: 70px;
+  padding: 25px 0;
+  color: white;
 }
 
 body {
@@ -9,6 +38,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 200%;
+      /* start body required properties */
+    position: relative;
+    margin: 0;
+    box-sizing: inherit;
+    min-height: 100vh;
+
+
 }
 
 .tpv-title {
@@ -58,11 +94,16 @@ body {
   
   .tpv-topnav a:hover,  .tpv-navbar a:hover, .tpv-subnav:hover .tpv-subnavbtn, .tpv-subnav-content a:hover {
     color: white;
-    text-shadow: -.100px -.100px 0 white, 
-    .100px .100px white;
+    text-shadow: -.150px -.150px 0 white, 
+    .150px .150px white;
   }
+
   
   .tpv-topnav a.active {
+    color: #04AA6D;
+  }
+
+  .active {
     color: #04AA6D;
   }
 
@@ -110,3 +151,16 @@ body {
   .tpv-subnav:hover .tpv-subnav-content {
     display: block;
   }
+
+
+.container {
+  margin-bottom: 50px;
+}
+
+/* VIDEOJS PLAYER SECTION */
+
+.tpv-videojs {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+}

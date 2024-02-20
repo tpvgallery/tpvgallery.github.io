@@ -1,0 +1,28 @@
+header {
+    height: 180px; /* set the height of the header to 100 pixels */
+    background:black;
+}
+
+footer {
+  background: /* gradient can be an image */
+  linear-gradient(
+    to left, 
+    rgb(0, 225, 255) 0%,
+    rgb(0, 153, 255) 100%
+  )
+  left 
+  top
+  no-repeat; 
+  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
+  height: 180px; /* set the height of the header to 100 pixels */
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top:auto;
+}
+
+.tpv-footercontent {
+  margin-right: 70px;
+  margin-left: 70px;
+  padding: 25px 0;
+  color: white;
+}
+
