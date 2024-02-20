@@ -1,0 +1,112 @@
+header {
+    height: 180px; /* set the height of the header to 100 pixels */
+    background:black;
+}
+
+body {
+    background-image: url("tpv-background.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200%;
+}
+
+.tpv-title {
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+.tpv-heading02 {
+    color: white;
+    line-height: 2;
+}
+
+.tpv-infotext {
+    color: white;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.tpv-topnav {
+    overflow: hidden;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgb(0, 225, 255) 0%,
+      rgb(0, 153, 255) 100%
+    )
+    left 
+    bottom
+    no-repeat; 
+    background-size:100% 3px ;/* if linear-gradient, we need to resize it */
+}
+
+.tpv-topnavinside {
+    margin-left: 50px;
+    height:auto;
+}
+  
+  .tpv-topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .tpv-topnav a:hover,  .tpv-navbar a:hover, .tpv-subnav:hover .tpv-subnavbtn, .tpv-subnav-content a:hover {
+    color: white;
+    text-shadow: -.100px -.100px 0 white, 
+    .100px .100px white;
+  }
+  
+  .tpv-topnav a.active {
+    color: #04AA6D;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tpv-subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .tpv-subnav .tpv-subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  
+  .tpv-subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 100%;
+    z-index: 1;
+  }
+
+  .tpv-subnav-contentinside {
+    margin-left: 50px;
+  }
+  
+  .tpv-subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .tpv-subnav:hover .tpv-subnav-content {
+    display: block;
+  }
