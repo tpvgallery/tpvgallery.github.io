@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Player</title>
+    <style>
+        body { font-family: Montserrat, sans-serif; }
+    </style>
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+    <link href="assets/styles.css" type="text/css" rel="stylesheet">
+    <script src="assets/import.js"></script>
+</head>
+<header>
+    </div>
+    <img src="assets/tpvg-1000.png" style="height: 65%; margin-left: 50px; margin-top:10px"></img>
+    <div class="tpv-topnav">
+        <div class="tpv-topnavinside">
+        <a href="/">Trang chủ</a>
+        <div class="tpv-subnav">
+            <button class="tpv-subnavbtn active">Việt Nam<i class="fa fa-caret-down"></i></button>
+            <div class="tpv-subnav-content">
+                <div class="tpv-subnav-contentinside">
+                    <a href="#company">a</a>
+                    <a href="#team">b</a>
+                    <a href="#careers">c</a>
+                </div>
+            </div>
+          </div> 
+        <a href="#contact">Thế giới</a>
+        <a href="about.html">Về chúng tôi</a>
+        </div>
+    </div>
+</header>
+
+
+<body>
+<div class="container">
+    <br>
+    <div class="tpv-videojs">
+        <video
+        id="my-video"
+        class="video-js vjs-theme-forest"
+        controls
+        preload="auto"
+        width="640"
+        height="auto"
+        poster="MY_VIDEO_POSTER.jpg"
+        data-setup="{}"
+      >
+        <source src="
+        https://res.cloudinary.com/dp7xlktyp/video/upload/v1708429400/brmsnjs5waaq2s3eubxy.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+    
+      <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    </div>
+    <div class="tpv-title">
+        <h2 class="tpv-heading02">test</h1>
+        <a class="tpv-infotext">test</a>
+    </div>
+
+</div>
+</body>
+<footer>
+<div w3-include-html="assets/footer.html"></div>
+<script>
+    includeHTML();
+</script>
+</footer>
+</html>
